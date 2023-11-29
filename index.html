@@ -22,30 +22,28 @@
         <p class="description__text">Join 60,000+ product managers receiving monthly updates on:</p>
       </section>
         <ul class="summary__list">
-            <li class="list__element reaction_element">
+            <li class="list__element">
               <svg class="element__icon" ></svg>
               <p class="element_p">Product discovery and building what matters</p>
             </li>
-            <li class="list__element reaction_element">
+            <li class="list__element">
               <svg class="element__icon" ></svg>
               <p class="element_p">Measuring to ensure updates are a success</p>
             </li>
-            <li class="list__element reaction_element">
+            <li class="list__element">
               <svg class="element__icon" ></svg>
               <p class="element_p">And much more!</p>
             </li>
         </ul>
-        <div class="info__container">
-          <form class="container__form">
-            <div class="form__field">
-              <label for="email" class="field__label">Email address
-                <svg class="label__svg inactive"></svg>
-              </label>
-              <input type="email" id="email" required autocomplete="email" placeholder="email@company.com" class="field__input">
-            </div>
-            <input type="submit" value="Subscribe to monthly newsletter" class="form__button">
-          </form>
-        </div>
+
+        <form class="container__form">
+          <div class="form__field">
+            <label for="email" class="field__label">Email address</label>
+            <input type="email" id="email" required autocomplete="email" placeholder="email@company.com" class="field__input">
+            <p class="field__error inactive">Password cannot be empty</p>
+          </div>
+          <input type="submit" value="Subscribe to monthly newsletter" class="form__button">
+        </form>
     </div>
     <!-- Sign-up form end -->
 

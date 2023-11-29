@@ -22,9 +22,195 @@
     html {
         font-size: 62.5%;
         font-family: 'Roboto', sans-serif;
-        background: var(--ream);
+        background: var(--white);
     }
     main {
         width: 100vw;
         height: 100vh;
+    }
+    .card {
+        width: 100%;
+        max-width: 460px;
+        min-width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    /* Img container */
+    .card__result {
+        width: 100%;
+        max-width: 460px;
+        min-width: 300px;
+        /* height: 330px; */
+    }
+    .card__img {
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 2.5rem 2.5rem;
+        min-height: 280px;
+        background-image: url('./assets/illustration-sign-up-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* Description container */
+    .card__summary {
+        width: 100%;
+        max-width: 460px;
+        min-width: 300px;
+        padding: 3rem 2rem;
+    }
+    .section__description {
+        text-align: left;
+        width: 100%;
+        /* height: 330px; */
+    }
+    .description__title {
+        color: var(--dark-slate-grey);
+        font-size: var(--lg);
+        font-weight: 700;
+    }
+    .description__text {
+        margin-top: 2rem;
+        color: var(--charcoal-grey);
+        line-height: 1.8;
+        font-size: var(--md);
+    }
+    .summary__list {
+        list-style: none;
+        margin: 2.5rem 0;
+    }
+    .list__element {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: 55px;
+        margin: 15px 0px;
+    }
+    .element__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+        background-image: url('./assets/icon-list.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .element_p {
+        font-size: var(--md);
+    }
+
+    /* Sing-up Form */
+    .container__form {
+        width: 100%;
+    }
+    .form__field {
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin: 1.5rem 0px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .field__label {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        font-size: var(--sm);
+        color: var(--dark-slate-grey);
+        font-weight: 700;
+    }
+    .field__input {
+        width: 100%;
+        height: 6rem;
+        border: var(--grey) solid 0.5px;
+        border-radius: 5px;
+        padding: 2rem;
+        color: var(--dark-slate-grey);
+        font-size: var(--sm);
+        font-weight: 400;
+    }
+    .field__input:focus {
+        outline: none;
+        border: var(--dark-slate-grey) solid 1px;
+    }
+    .field__error {
+        position: absolute;
+        font-size: 1.1rem;
+        color: var(--tomato);
+        margin-top: 0.5rem;
+    }
+    .form__button {
+        width: 100%;
+        height: 6rem;
+        border: 0;
+        border-radius: 5px;
+        font-size: var(--md);
+        font-weight: 600;
+        color: var(--white);
+        background: var(--dark-slate-grey);
+        /* box-shadow: inset 0px -3px 2px 1px rgb(0 0 0 / 16%); */
+    }
+    /* Sucsses message */
+    .container__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: var(--medium-grey);
+        border-radius: 50%;
+    }
+    .container__box:nth-child(1) {
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    .box__icon {
+        display: block;
+        width: 17px;
+        height: 16px;
+        background-image: url('./images/icon-star.svg');
+    }
+    .container__title {
+        font-size: var(--lg);
+        font-weight: bold;
+        color: var(--white);
+        margin-bottom: 10px;
+    }
+    .container__info {
+        color: var(--light-grey);
+        font-size: var(--md);
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .container__ratings {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+    }
+    .ratings__imput {
+        display: none;
+    }
+    .ratings__label {
+        padding: 13px 18px;
+        background: var(--medium-grey);
+        border-radius: 50%;
+    }
+    .rating__p {
+        color: var(--light-grey);
+        font-size: var(--md);
+    }
+    .container__button {
+        width: 100%;
+        height: 45px;
+        border-radius: 30px;
+        border:none;
+        font-size: var(--md);
+        color: var(--white);
+        background: var(--orange);
+    }
+
+
+
+    .inactive {
+        display: none;
     }

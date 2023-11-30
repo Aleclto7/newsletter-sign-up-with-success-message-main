@@ -139,7 +139,7 @@
         color: var(--tomato);
         margin-top: 0.5rem;
     }
-    .form__button {
+    .form__button, .container__button {
         width: 100%;
         height: 6rem;
         border: 0;
@@ -151,66 +151,39 @@
         /* box-shadow: inset 0px -3px 2px 1px rgb(0 0 0 / 16%); */
     }
     /* Sucsses message */
-    .container__box {
+    .card__container {
+        width: 100%;
+        max-width: 460px;
+        min-width: 300px;
+        height: 100vh;
+        margin: auto;
+        padding: 3rem 2rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background: var(--medium-grey);
-        border-radius: 50%;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .container__box:nth-child(1) {
-        margin-bottom: 25px;
-        margin-top: 15px;
+    .container__box {
+        padding-top: 15rem;
     }
     .box__icon {
         display: block;
-        width: 17px;
-        height: 16px;
-        background-image: url('./images/icon-star.svg');
+        width: 64px;
+        height: 64px;
+        background-image: url(./assets/icon-success.svg);
+        margin-bottom: 4rem;
     }
     .container__title {
         font-size: var(--lg);
         font-weight: bold;
-        color: var(--white);
-        margin-bottom: 10px;
+        color: var(--dark-slate-grey);
+        margin-bottom: 2rem;
     }
     .container__info {
-        color: var(--light-grey);
+        color: var(--charcoal-grey);
         font-size: var(--md);
         line-height: 1.5;
-        margin-bottom: 20px;
     }
-    .container__ratings {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px 0px;
-    }
-    .ratings__imput {
-        display: none;
-    }
-    .ratings__label {
-        padding: 13px 18px;
-        background: var(--medium-grey);
-        border-radius: 50%;
-    }
-    .rating__p {
-        color: var(--light-grey);
-        font-size: var(--md);
-    }
-    .container__button {
-        width: 100%;
-        height: 45px;
-        border-radius: 30px;
-        border:none;
-        font-size: var(--md);
-        color: var(--white);
-        background: var(--orange);
-    }
-
-
-
+    
     .inactive {
         display: none;
     }

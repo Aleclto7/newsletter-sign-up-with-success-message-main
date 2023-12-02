@@ -185,6 +185,11 @@
     .inactive {
         display: none;
     }
+    .error {
+        background: hsla(18, 100%, 54%, 0.119);
+        color: var(--tomato);
+        border: var(--tomato) solid 1px;
+    }
 
     .form__button:hover, .container__button:hover {
         background: linear-gradient(to right, hsl(0, 100%, 66%),hsl(17, 97%, 61%));

@@ -206,11 +206,11 @@
             align-items: center;
             max-width: 785px;
             max-height: 540px;
-            border-radius: 40px;
+            border-radius: 30px;
         }
         .image__container {
             height: 100%;
-            padding: 2.5rem 2.5rem 2.5rem 0rem;
+            padding: 2rem 2rem 2rem 0rem;
             order: 1;
         }
         .container__img {

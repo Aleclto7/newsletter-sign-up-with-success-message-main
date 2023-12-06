@@ -125,6 +125,7 @@
         color: var(--dark-slate-grey);
         font-size: var(--sm);
         font-weight: 400;
+        cursor: pointer;
     }
     .field__input:focus {
         outline: none;
@@ -145,6 +146,7 @@
         font-weight: 600;
         color: var(--white);
         background: var(--dark-slate-grey);
+        cursor: pointer;
         /* box-shadow: inset 0px -3px 2px 1px rgb(0 0 0 / 16%); */
     }
     /* Sucsses message */
